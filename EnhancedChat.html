@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DHZ000000hknj',
+				'Enhanced_ChatBot',
+				'https://agasus--devnew.sandbox.my.site.com/ESWEnhancedChatBot1708464166838',
+				{
+					scrt2URL: 'https://agasus--devnew.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://agasus--devnew.sandbox.my.site.com/ESWEnhancedChatBot1708464166838/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
